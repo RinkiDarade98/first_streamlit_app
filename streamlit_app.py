@@ -68,7 +68,7 @@ except URLError as e :
 
 
 
-streamlit.stop()
+
 
 # import snowflake.connector
 
@@ -103,11 +103,11 @@ if streamlit.button('add fruit to the list'):
    back_from_function = insert_row_snowflake(add_my_fruit)
    streamlit.text(back_from_function)
 
+streamlit.stop()
 
 
 
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 
    
